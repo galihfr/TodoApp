@@ -7,8 +7,8 @@ import EditModal from "../components/EditModal";
 import DeleteModal from "../components/deleteModal";
 
 const Home = () => {
-  let { todoLists } = useSelector((state) => state.TodoAppReducer);
   const dispatch = useDispatch();
+  let { todoLists } = useSelector((state) => state.TodoAppReducer);
   const [isEdit, setIsEdit] = useState(false)
   const [isDelete, setIsDelete] = useState(false)
   const [editData, setEditData] = useState({
